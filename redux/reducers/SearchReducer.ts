@@ -1,68 +1,37 @@
 import {createSlice} from '@reduxjs/toolkit';
-import store, {AppDispatch} from '../store';
-import axios from 'axios';
+import {searchFlikr} from '../../api/Search';
+import {ImageType, PhotosState} from '../types';
+import {AppDispatch} from '../store';
 
-export interface ImageType {
-  id: string;
-  owner: string;
-  secret: string;
-  server: string;
-  farm: number;
-  title: string;
-  ispublic: number;
-  isfriend: number;
-  isfamily: number;
-}
-
-export interface PhotosState {
-  page: number;
-  pages: number;
-  perpage: number;
-  total: number;
-  photo: [ImageType];
-  error: string | undefined;
-  search: string;
-}
-interface PhotosResponse {
-  photos: PhotosState;
-  stat: string;
-}
 const initialState: PhotosState = {
   page: 1,
   pages: 0,
   perpage: 0,
   total: 0,
-  photo: {} as [ImageType],
+  photo: {} as ImageType[],
   error: undefined,
   search: '',
+  oldSearches: {} as string[],
 };
 
 export const searchFlickrAPI = async (
   searchTerm: string,
   dispatch: AppDispatch,
-  nextPage: boolean,
+  pageNumber: number,
 ) => {
   try {
-    let url = `https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=11c40ef31e4961acf4f98c8ff4e945d7&format=json&nojsoncallback=1&text=${searchTerm}&per_page=20`;
-    let pageNumber = store.getState().search.page;
-    if (nextPage) {
-      pageNumber++;
+    const flikrData = await searchFlikr(searchTerm, pageNumber);
+    const {photos} = flikrData ?? {};
+    if (pageNumber > 1) {
+      // We are requesting the next page for load
+      dispatch(getNextItems(photos));
+    } else {
+      //We are requesting a new search
+      dispatch(searchNew({photoData: photos, search: searchTerm}));
     }
-    url += `&page=${pageNumber}`;
-    console.log(url);
-    //TODO: Move API call to API folder
-    const response = await axios.get<PhotosResponse>(url);
-    if (response.data.stat === 'ok') {
-      if (nextPage) {
-        dispatch(getNextItems(response.data.photos));
-      } else {
-        dispatch(
-          searchNew({photoData: response.data.photos, search: searchTerm}),
-        );
-      }
-    }
-  } catch (e) {
-    console.log(e);
+  } catch (e: any) {
+    //console.log(e.message);
+    dispatch(errored('Could not load data'));
   }
 };
 const Search = createSlice({
@@ -70,24 +39,59 @@ const Search = createSlice({
   initialState: initialState,
   reducers: {
     searchNew: (state, action) => {
+      const joinedOldSearches = Array.isArray(state.oldSearches)
+        ? [...state.oldSearches, action.payload.search]
+        : [action.payload.search];
       return {
         ...state,
         ...action.payload.photoData,
-        ...{search: action.payload.search},
+        ...{
+          search: action.payload.search,
+          oldSearches: [...new Set(joinedOldSearches)],
+        },
+        ...{error: ''},
       };
     },
     getNextItems: (state, action) => {
       const joinedPhotos = [...state.photo, ...action.payload.photo];
       console.log(joinedPhotos.length);
-      return {...state, ...action.payload, ...{photo: joinedPhotos}};
+      return {
+        ...state,
+        ...action.payload,
+        ...{photo: joinedPhotos},
+        ...{error: ''},
+      };
     },
+
     clearItems: () => initialState,
+    clearSearchTerm: state => {
+      console.log('clearing search term');
+      //When the search term is cleared we will clear the state except the oldSearches
+      return {...initialState, ...{oldSearches: state.oldSearches}};
+    },
     errored: (state, action) => {
+      console.log(action.payload);
       return {...state, ...{error: action.payload}};
+    },
+    deleteSearchItem: (state, action) => {
+      const oldSearches = state.oldSearches.filter(
+        item => item !== action.payload,
+      );
+      return {
+        ...state,
+        ...{oldSearches: oldSearches},
+      };
     },
   },
 });
 
-export const {searchNew, getNextItems, clearItems} = Search.actions;
+export const {
+  searchNew,
+  getNextItems,
+  clearSearchTerm,
+  clearItems,
+  errored,
+  deleteSearchItem,
+} = Search.actions;
 
 export default Search.reducer;

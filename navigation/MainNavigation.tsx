@@ -1,11 +1,11 @@
 import React from 'react';
 import {createStackNavigator} from '@react-navigation/stack';
-import Home from '../screens/Home';
-import Search from '../screens/Search';
+import HomeScreen from '../screens/HomeScreen/HomeScreen';
+import SearchScreen from '../screens/SearchScreen/SearchScreen';
 
 export type StackNavigatorParams = {
-  Home: undefined;
-  Search: undefined;
+  HomeScreen: undefined;
+  SearchScreen: undefined;
 };
 
 const Stack = createStackNavigator<StackNavigatorParams>();
@@ -14,9 +14,9 @@ const MainNavigation = () => {
   return (
     <Stack.Navigator
       screenOptions={{header: () => null}}
-      initialRouteName={'Home'}>
-      <Stack.Screen name="Home" component={Home} />
-      <Stack.Screen name="Search" component={Search} />
+      initialRouteName={'HomeScreen'}>
+      <Stack.Screen name="HomeScreen" component={HomeScreen} />
+      <Stack.Screen name="SearchScreen" component={SearchScreen} />
     </Stack.Navigator>
   );
 };

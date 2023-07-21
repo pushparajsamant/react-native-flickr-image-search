@@ -13,7 +13,7 @@ import store from './redux/store';
 import {Provider} from 'react-redux';
 import 'react-native-gesture-handler';
 import MainNavigation from './navigation/MainNavigation';
-import Home from './screens/Home';
+import HomeScreen from './screens/HomeScreen/HomeScreen';
 
 function App(): React.JSX.Element {
   const isDarkMode = useColorScheme() === 'dark';
