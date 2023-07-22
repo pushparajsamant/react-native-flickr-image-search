@@ -1,13 +1,12 @@
 import {combineReducers, configureStore} from '@reduxjs/toolkit';
-import logger from 'redux-logger';
 import SearchReducer from './reducers/SearchReducer';
-import { useDispatch } from "react-redux";
+import {useDispatch} from 'react-redux';
 const rootReducer = combineReducers({
   search: SearchReducer,
 });
 const store = configureStore({
   reducer: rootReducer,
-  middleware: getDefaultMiddleware => getDefaultMiddleware().concat(logger),
+  //middleware: getDefaultMiddleware => getDefaultMiddleware().concat(logger),
 });
 
 export type RootState = ReturnType<typeof store.getState>;

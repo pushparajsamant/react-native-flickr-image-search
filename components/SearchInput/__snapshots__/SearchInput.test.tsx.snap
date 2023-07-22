@@ -1,0 +1,264 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Search Input Component renders correctly with close and submit button 1`] = `
+<View
+  style={
+    {
+      "alignItems": "center",
+      "flexDirection": "row",
+      "gap": 5,
+      "marginVertical": 21.516129032258068,
+      "paddingHorizontal": 21.428571428571427,
+    }
+  }
+>
+  <View
+    style={
+      {
+        "alignItems": "center",
+        "backgroundColor": "#CAF0F8",
+        "borderColor": "#CAF0F8",
+        "borderRadius": 32.14285714285714,
+        "borderWidth": 1,
+        "flexDirection": "row",
+        "flexGrow": 3,
+        "height": 107.58064516129033,
+        "paddingHorizontal": 21.428571428571427,
+      }
+    }
+  >
+    <
+      color="#25C0FF"
+      icon={
+        {
+          "icon": [
+            512,
+            512,
+            [
+              128269,
+              "search",
+            ],
+            "f002",
+            "M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z",
+          ],
+          "iconName": "magnifying-glass",
+          "prefix": "fas",
+        }
+      }
+      size={22}
+    />
+    <TextInput
+      autoCorrect={false}
+      onChangeText={[Function]}
+      placeholder="Search"
+      style={
+        {
+          "flex": 1,
+          "fontFamily": "Inter",
+          "fontSize": 27.906976744186046,
+          "height": "100%",
+          "lineHeight": 31.3953488372093,
+          "marginLeft": 12.857142857142858,
+          "paddingHorizontal": 34.285714285714285,
+        }
+      }
+      value=""
+    />
+  </View>
+  <View
+    accessibilityState={
+      {
+        "busy": undefined,
+        "checked": undefined,
+        "disabled": undefined,
+        "expanded": undefined,
+        "selected": undefined,
+      }
+    }
+    accessibilityValue={
+      {
+        "max": undefined,
+        "min": undefined,
+        "now": undefined,
+        "text": undefined,
+      }
+    }
+    accessible={true}
+    collapsable={false}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      {
+        "alignItems": "center",
+        "height": 107.58064516129033,
+        "justifyContent": "center",
+        "opacity": 1,
+        "width": 107.14285714285714,
+      }
+    }
+  >
+    <
+      color="#03045E"
+      icon={
+        {
+          "icon": [
+            512,
+            512,
+            [
+              128269,
+              "search",
+            ],
+            "f002",
+            "M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z",
+          ],
+          "iconName": "magnifying-glass",
+          "prefix": "fas",
+        }
+      }
+      size={22}
+    />
+  </View>
+</View>
+`;
+
+exports[`Search Input Component renders correctly with placeholder 1`] = `
+<View
+  style={
+    {
+      "alignItems": "center",
+      "flexDirection": "row",
+      "gap": 5,
+      "marginVertical": 21.516129032258068,
+      "paddingHorizontal": 21.428571428571427,
+    }
+  }
+>
+  <View
+    style={
+      {
+        "alignItems": "center",
+        "backgroundColor": "#CAF0F8",
+        "borderColor": "#CAF0F8",
+        "borderRadius": 32.14285714285714,
+        "borderWidth": 1,
+        "flexDirection": "row",
+        "flexGrow": 3,
+        "height": 107.58064516129033,
+        "paddingHorizontal": 21.428571428571427,
+      }
+    }
+  >
+    <
+      color="#25C0FF"
+      icon={
+        {
+          "icon": [
+            512,
+            512,
+            [
+              128269,
+              "search",
+            ],
+            "f002",
+            "M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z",
+          ],
+          "iconName": "magnifying-glass",
+          "prefix": "fas",
+        }
+      }
+      size={22}
+    />
+    <TextInput
+      autoCorrect={false}
+      onChangeText={[Function]}
+      placeholder="Search Text"
+      style={
+        {
+          "flex": 1,
+          "fontFamily": "Inter",
+          "fontSize": 27.906976744186046,
+          "height": "100%",
+          "lineHeight": 31.3953488372093,
+          "marginLeft": 12.857142857142858,
+          "paddingHorizontal": 34.285714285714285,
+        }
+      }
+      value=""
+    />
+  </View>
+</View>
+`;
+
+exports[`Search Input Component renders correctly without close and submit button 1`] = `
+<View
+  style={
+    {
+      "alignItems": "center",
+      "flexDirection": "row",
+      "gap": 5,
+      "marginVertical": 21.516129032258068,
+      "paddingHorizontal": 21.428571428571427,
+    }
+  }
+>
+  <View
+    style={
+      {
+        "alignItems": "center",
+        "backgroundColor": "#CAF0F8",
+        "borderColor": "#CAF0F8",
+        "borderRadius": 32.14285714285714,
+        "borderWidth": 1,
+        "flexDirection": "row",
+        "flexGrow": 3,
+        "height": 107.58064516129033,
+        "paddingHorizontal": 21.428571428571427,
+      }
+    }
+  >
+    <
+      color="#25C0FF"
+      icon={
+        {
+          "icon": [
+            512,
+            512,
+            [
+              128269,
+              "search",
+            ],
+            "f002",
+            "M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z",
+          ],
+          "iconName": "magnifying-glass",
+          "prefix": "fas",
+        }
+      }
+      size={22}
+    />
+    <TextInput
+      autoCorrect={false}
+      onChangeText={[Function]}
+      placeholder="Search"
+      style={
+        {
+          "flex": 1,
+          "fontFamily": "Inter",
+          "fontSize": 27.906976744186046,
+          "height": "100%",
+          "lineHeight": 31.3953488372093,
+          "marginLeft": 12.857142857142858,
+          "paddingHorizontal": 34.285714285714285,
+        }
+      }
+      value=""
+    />
+  </View>
+</View>
+`;

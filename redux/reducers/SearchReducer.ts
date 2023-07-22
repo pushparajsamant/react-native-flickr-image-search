@@ -65,7 +65,7 @@ const Search = createSlice({
 
     clearItems: () => initialState,
     clearSearchTerm: state => {
-      console.log('clearing search term');
+      //console.log('clearing search term');
       //When the search term is cleared we will clear the state except the oldSearches
       return {...initialState, ...{oldSearches: state.oldSearches}};
     },

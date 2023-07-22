@@ -1,7 +1,7 @@
 import React from 'react';
-import {ImageType} from '../../redux/reducers/SearchReducer';
 import {Image, StyleSheet} from 'react-native';
 import {horizontalScale} from '../../assets/styles/scale';
+import {ImageType} from '../../redux/types';
 interface Props {
   item: ImageType;
 }

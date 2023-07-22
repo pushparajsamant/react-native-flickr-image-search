@@ -1,0 +1,649 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`HomeScreen renders correctly with data from Redux 1`] = `
+<RCTSafeAreaView>
+  <View
+    style={
+      {
+        "alignItems": "center",
+        "flexDirection": "row",
+        "gap": 5,
+        "marginVertical": 21.516129032258068,
+        "paddingHorizontal": 21.428571428571427,
+      }
+    }
+  >
+    <View
+      style={
+        {
+          "alignItems": "center",
+          "backgroundColor": "#CAF0F8",
+          "borderColor": "#CAF0F8",
+          "borderRadius": 32.14285714285714,
+          "borderWidth": 1,
+          "flexDirection": "row",
+          "flexGrow": 3,
+          "height": 107.58064516129033,
+          "paddingHorizontal": 21.428571428571427,
+        }
+      }
+    >
+      <
+        color="#25C0FF"
+        icon={
+          {
+            "icon": [
+              512,
+              512,
+              [
+                128269,
+                "search",
+              ],
+              "f002",
+              "M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z",
+            ],
+            "iconName": "magnifying-glass",
+            "prefix": "fas",
+          }
+        }
+        size={22}
+      />
+      <TextInput
+        autoCorrect={false}
+        onChangeText={[Function]}
+        onFocus={[Function]}
+        placeholder="Search"
+        style={
+          {
+            "flex": 1,
+            "fontFamily": "Inter",
+            "fontSize": 27.906976744186046,
+            "height": "100%",
+            "lineHeight": 31.3953488372093,
+            "marginLeft": 12.857142857142858,
+            "paddingHorizontal": 34.285714285714285,
+          }
+        }
+        value=""
+      />
+    </View>
+  </View>
+  <RCTScrollView
+    data={
+      [
+        {
+          "farm": 66,
+          "id": "52708477344",
+          "isfamily": 0,
+          "isfriend": 0,
+          "ispublic": 1,
+          "owner": "197759494@N02",
+          "secret": "e883e24554",
+          "server": "65535",
+          "title": "Rahul Kohli",
+        },
+        {
+          "farm": 66,
+          "id": "52708707438",
+          "isfamily": 0,
+          "isfriend": 0,
+          "ispublic": 1,
+          "owner": "197759494@N02",
+          "secret": "0e034643f9",
+          "server": "65535",
+          "title": "Rahul Kohli",
+        },
+        {
+          "farm": 66,
+          "id": "52707700162",
+          "isfamily": 0,
+          "isfriend": 0,
+          "ispublic": 1,
+          "owner": "197759494@N02",
+          "secret": "2772dd9ea6",
+          "server": "65535",
+          "title": "Rahul Kohli",
+        },
+        {
+          "farm": 66,
+          "id": "52708477294",
+          "isfamily": 0,
+          "isfriend": 0,
+          "ispublic": 1,
+          "owner": "197759494@N02",
+          "secret": "252cbca428",
+          "server": "65535",
+          "title": "Rahul Kohli",
+        },
+        {
+          "farm": 66,
+          "id": "52708635975",
+          "isfamily": 0,
+          "isfriend": 0,
+          "ispublic": 1,
+          "owner": "197759494@N02",
+          "secret": "cc17ab1e00",
+          "server": "65535",
+          "title": "Rahul Kohli",
+        },
+        {
+          "farm": 66,
+          "id": "52708477239",
+          "isfamily": 0,
+          "isfriend": 0,
+          "ispublic": 1,
+          "owner": "197759494@N02",
+          "secret": "8a4c427f3b",
+          "server": "65535",
+          "title": "Rahul Kohli",
+        },
+        {
+          "farm": 66,
+          "id": "52708635885",
+          "isfamily": 0,
+          "isfriend": 0,
+          "ispublic": 1,
+          "owner": "197759494@N02",
+          "secret": "9fb75886fe",
+          "server": "65535",
+          "title": "Rahul Kohli",
+        },
+        {
+          "farm": 66,
+          "id": "52708707258",
+          "isfamily": 0,
+          "isfriend": 0,
+          "ispublic": 1,
+          "owner": "197759494@N02",
+          "secret": "7f50bcf173",
+          "server": "65535",
+          "title": "Rahul Kohli",
+        },
+        {
+          "farm": 66,
+          "id": "52708221451",
+          "isfamily": 0,
+          "isfriend": 0,
+          "ispublic": 1,
+          "owner": "197759494@N02",
+          "secret": "254355b453",
+          "server": "65535",
+          "title": "Rahul Kohli",
+        },
+        {
+          "farm": 66,
+          "id": "52708221406",
+          "isfamily": 0,
+          "isfriend": 0,
+          "ispublic": 1,
+          "owner": "197759494@N02",
+          "secret": "fde6d3c379",
+          "server": "65535",
+          "title": "Rahul Kohli",
+        },
+        {
+          "farm": 66,
+          "id": "52708635745",
+          "isfamily": 0,
+          "isfriend": 0,
+          "ispublic": 1,
+          "owner": "197759494@N02",
+          "secret": "5eaa3d1741",
+          "server": "65535",
+          "title": "Rahul Kohli",
+        },
+        {
+          "farm": 66,
+          "id": "52708477069",
+          "isfamily": 0,
+          "isfriend": 0,
+          "ispublic": 1,
+          "owner": "197759494@N02",
+          "secret": "06ce4163fb",
+          "server": "65535",
+          "title": "Rahul Kohli",
+        },
+        {
+          "farm": 66,
+          "id": "52708477039",
+          "isfamily": 0,
+          "isfriend": 0,
+          "ispublic": 1,
+          "owner": "197759494@N02",
+          "secret": "8c95d685d2",
+          "server": "65535",
+          "title": "Rahul Kohli",
+        },
+        {
+          "farm": 66,
+          "id": "52708635670",
+          "isfamily": 0,
+          "isfriend": 0,
+          "ispublic": 1,
+          "owner": "197759494@N02",
+          "secret": "8630771f26",
+          "server": "65535",
+          "title": "Rahul Kohli",
+        },
+        {
+          "farm": 66,
+          "id": "52707699647",
+          "isfamily": 0,
+          "isfriend": 0,
+          "ispublic": 1,
+          "owner": "197759494@N02",
+          "secret": "3355106abf",
+          "server": "65535",
+          "title": "Rahul Kohli",
+        },
+        {
+          "farm": 66,
+          "id": "52708635485",
+          "isfamily": 0,
+          "isfriend": 0,
+          "ispublic": 1,
+          "owner": "197759494@N02",
+          "secret": "bee7f0fd19",
+          "server": "65535",
+          "title": "Rahul Kohli",
+        },
+        {
+          "farm": 66,
+          "id": "52708221041",
+          "isfamily": 0,
+          "isfriend": 0,
+          "ispublic": 1,
+          "owner": "197759494@N02",
+          "secret": "65c386332b",
+          "server": "65535",
+          "title": "Rahul Kohli",
+        },
+      ]
+    }
+    getItem={[Function]}
+    getItemCount={[Function]}
+    keyExtractor={[Function]}
+    onContentSizeChange={[Function]}
+    onEndReached={[Function]}
+    onEndReachedThreshold={0.5}
+    onLayout={[Function]}
+    onMomentumScrollBegin={[Function]}
+    onMomentumScrollEnd={[Function]}
+    onScroll={[Function]}
+    onScrollBeginDrag={[Function]}
+    onScrollEndDrag={[Function]}
+    removeClippedSubviews={false}
+    renderItem={[Function]}
+    scrollEventThrottle={50}
+    stickyHeaderIndices={[]}
+    viewabilityConfigCallbackPairs={[]}
+  >
+    <View>
+      <View
+        onFocusCapture={[Function]}
+        onLayout={[Function]}
+        style={null}
+      >
+        <View
+          style={
+            {
+              "flexDirection": "row",
+            }
+          }
+        >
+          <Image
+            source={
+              {
+                "uri": "https://farm66.static.flickr.com/65535/52708477344_e883e24554.jpg",
+              }
+            }
+            style={
+              {
+                "height": 100,
+                "margin": 8.571428571428571,
+                "width": "48%",
+              }
+            }
+          />
+          <Image
+            source={
+              {
+                "uri": "https://farm66.static.flickr.com/65535/52708707438_0e034643f9.jpg",
+              }
+            }
+            style={
+              {
+                "height": 100,
+                "margin": 8.571428571428571,
+                "width": "48%",
+              }
+            }
+          />
+        </View>
+      </View>
+      <View
+        onFocusCapture={[Function]}
+        onLayout={[Function]}
+        style={null}
+      >
+        <View
+          style={
+            {
+              "flexDirection": "row",
+            }
+          }
+        >
+          <Image
+            source={
+              {
+                "uri": "https://farm66.static.flickr.com/65535/52707700162_2772dd9ea6.jpg",
+              }
+            }
+            style={
+              {
+                "height": 100,
+                "margin": 8.571428571428571,
+                "width": "48%",
+              }
+            }
+          />
+          <Image
+            source={
+              {
+                "uri": "https://farm66.static.flickr.com/65535/52708477294_252cbca428.jpg",
+              }
+            }
+            style={
+              {
+                "height": 100,
+                "margin": 8.571428571428571,
+                "width": "48%",
+              }
+            }
+          />
+        </View>
+      </View>
+      <View
+        onFocusCapture={[Function]}
+        onLayout={[Function]}
+        style={null}
+      >
+        <View
+          style={
+            {
+              "flexDirection": "row",
+            }
+          }
+        >
+          <Image
+            source={
+              {
+                "uri": "https://farm66.static.flickr.com/65535/52708635975_cc17ab1e00.jpg",
+              }
+            }
+            style={
+              {
+                "height": 100,
+                "margin": 8.571428571428571,
+                "width": "48%",
+              }
+            }
+          />
+          <Image
+            source={
+              {
+                "uri": "https://farm66.static.flickr.com/65535/52708477239_8a4c427f3b.jpg",
+              }
+            }
+            style={
+              {
+                "height": 100,
+                "margin": 8.571428571428571,
+                "width": "48%",
+              }
+            }
+          />
+        </View>
+      </View>
+      <View
+        onFocusCapture={[Function]}
+        onLayout={[Function]}
+        style={null}
+      >
+        <View
+          style={
+            {
+              "flexDirection": "row",
+            }
+          }
+        >
+          <Image
+            source={
+              {
+                "uri": "https://farm66.static.flickr.com/65535/52708635885_9fb75886fe.jpg",
+              }
+            }
+            style={
+              {
+                "height": 100,
+                "margin": 8.571428571428571,
+                "width": "48%",
+              }
+            }
+          />
+          <Image
+            source={
+              {
+                "uri": "https://farm66.static.flickr.com/65535/52708707258_7f50bcf173.jpg",
+              }
+            }
+            style={
+              {
+                "height": 100,
+                "margin": 8.571428571428571,
+                "width": "48%",
+              }
+            }
+          />
+        </View>
+      </View>
+      <View
+        onFocusCapture={[Function]}
+        onLayout={[Function]}
+        style={null}
+      >
+        <View
+          style={
+            {
+              "flexDirection": "row",
+            }
+          }
+        >
+          <Image
+            source={
+              {
+                "uri": "https://farm66.static.flickr.com/65535/52708221451_254355b453.jpg",
+              }
+            }
+            style={
+              {
+                "height": 100,
+                "margin": 8.571428571428571,
+                "width": "48%",
+              }
+            }
+          />
+          <Image
+            source={
+              {
+                "uri": "https://farm66.static.flickr.com/65535/52708221406_fde6d3c379.jpg",
+              }
+            }
+            style={
+              {
+                "height": 100,
+                "margin": 8.571428571428571,
+                "width": "48%",
+              }
+            }
+          />
+        </View>
+      </View>
+      <View
+        onFocusCapture={[Function]}
+        onLayout={[Function]}
+        style={null}
+      >
+        <View
+          style={
+            {
+              "flexDirection": "row",
+            }
+          }
+        >
+          <Image
+            source={
+              {
+                "uri": "https://farm66.static.flickr.com/65535/52708635745_5eaa3d1741.jpg",
+              }
+            }
+            style={
+              {
+                "height": 100,
+                "margin": 8.571428571428571,
+                "width": "48%",
+              }
+            }
+          />
+          <Image
+            source={
+              {
+                "uri": "https://farm66.static.flickr.com/65535/52708477069_06ce4163fb.jpg",
+              }
+            }
+            style={
+              {
+                "height": 100,
+                "margin": 8.571428571428571,
+                "width": "48%",
+              }
+            }
+          />
+        </View>
+      </View>
+      <View
+        onFocusCapture={[Function]}
+        onLayout={[Function]}
+        style={null}
+      >
+        <View
+          style={
+            {
+              "flexDirection": "row",
+            }
+          }
+        >
+          <Image
+            source={
+              {
+                "uri": "https://farm66.static.flickr.com/65535/52708477039_8c95d685d2.jpg",
+              }
+            }
+            style={
+              {
+                "height": 100,
+                "margin": 8.571428571428571,
+                "width": "48%",
+              }
+            }
+          />
+          <Image
+            source={
+              {
+                "uri": "https://farm66.static.flickr.com/65535/52708635670_8630771f26.jpg",
+              }
+            }
+            style={
+              {
+                "height": 100,
+                "margin": 8.571428571428571,
+                "width": "48%",
+              }
+            }
+          />
+        </View>
+      </View>
+      <View
+        onFocusCapture={[Function]}
+        onLayout={[Function]}
+        style={null}
+      >
+        <View
+          style={
+            {
+              "flexDirection": "row",
+            }
+          }
+        >
+          <Image
+            source={
+              {
+                "uri": "https://farm66.static.flickr.com/65535/52707699647_3355106abf.jpg",
+              }
+            }
+            style={
+              {
+                "height": 100,
+                "margin": 8.571428571428571,
+                "width": "48%",
+              }
+            }
+          />
+          <Image
+            source={
+              {
+                "uri": "https://farm66.static.flickr.com/65535/52708635485_bee7f0fd19.jpg",
+              }
+            }
+            style={
+              {
+                "height": 100,
+                "margin": 8.571428571428571,
+                "width": "48%",
+              }
+            }
+          />
+        </View>
+      </View>
+      <View
+        onFocusCapture={[Function]}
+        onLayout={[Function]}
+        style={null}
+      >
+        <View
+          style={
+            {
+              "flexDirection": "row",
+            }
+          }
+        >
+          <Image
+            source={
+              {
+                "uri": "https://farm66.static.flickr.com/65535/52708221041_65c386332b.jpg",
+              }
+            }
+            style={
+              {
+                "height": 100,
+                "margin": 8.571428571428571,
+                "width": "48%",
+              }
+            }
+          />
+        </View>
+      </View>
+    </View>
+  </RCTScrollView>
+</RCTSafeAreaView>
+`;
